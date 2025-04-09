@@ -3,11 +3,13 @@
 
 #include "Character.hpp"
 
-class Blinky{
+class Blinky : public Character {
 private:
+    Point position;//pacman 座標
+    std::string id;
 public:
-    Blinky(std::string id);
-    void DoBehavior();
+    Blinky(Point position,std::string id);
+    void DoBehavior() override;//移動行為?
 };
 
 #endif
