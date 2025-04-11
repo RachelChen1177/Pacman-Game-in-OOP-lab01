@@ -1,4 +1,4 @@
-# 👾 Pacman Console Game in C++
+# 👾 Pacman Game in C++
 
 一個使用 C++ 撰寫的簡易版 Pacman 小遊戲，使用物件導向設計，結合角色行為邏輯、座標判斷與簡易文字畫面繪製。
 
