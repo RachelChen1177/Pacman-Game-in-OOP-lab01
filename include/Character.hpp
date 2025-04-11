@@ -8,4 +8,9 @@ struct Point{
     int y = 0;
     Point(int x,int y): x(x),y(y) {}
 };
+class Character{
+public:
+    Character();
+    virtual void DoBehavior() = 0;
+};
 #endif

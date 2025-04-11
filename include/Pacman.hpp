@@ -1,19 +1,17 @@
 #ifndef PACMAN_HPP
 #define PACMAN_HPP
-#include <iostream>
+
 #include "Character.hpp"
 
-class Pacman : public Character{
+class Pacman: public Character{
 private:
-    Point position;
-
+    Point Position;
+    char PacmanOrder;
 public:
-    //初始位置建構子
     Pacman();
-    //50次的輸入
-    void DoBehavior();
-    void ClampPosition();
-
+    void SetOrder(char order);
+    void DoBehavior()override;
+    Point GetPosition();//回傳給main，並且才能移動
 };
 
 #endif

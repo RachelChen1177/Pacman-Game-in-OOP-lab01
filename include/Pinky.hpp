@@ -3,4 +3,7 @@
 
 #include "Character.hpp"
 
+class Pinky : public Character{
+
+};
 #endif

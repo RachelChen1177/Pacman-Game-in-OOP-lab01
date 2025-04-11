@@ -5,11 +5,13 @@
 
 class Blinky : public Character {
 private:
-    Point position;//pacman 座標
+    Point Position;//pacman 座標
+    int stage = 1;//紀錄狀態
     std::string id;
 public:
-    Blinky(Point position,std::string id);
-    void DoBehavior() override;//移動行為?
+    Blinky(std::string id);
+    void DoBehavior() override ;
+    Point GetPosition();
 };
 
 #endif

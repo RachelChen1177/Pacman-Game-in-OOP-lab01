@@ -3,4 +3,8 @@
 
 #include "Character.hpp"
 
+class Inky : public Character{
+
+};
+
 #endif

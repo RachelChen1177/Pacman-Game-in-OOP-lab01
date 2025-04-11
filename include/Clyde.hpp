@@ -3,5 +3,8 @@
 
 #include "Character.hpp"
 
+class Clyde : public Character{
+
+};
 
 #endif
