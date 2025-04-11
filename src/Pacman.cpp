@@ -20,6 +20,7 @@ void Pacman::DoBehavior(){
         Position.x+=3;
         break;
     default:
+        std::cout<<"invaild order"<<std::endl;
         break;
     }
 }

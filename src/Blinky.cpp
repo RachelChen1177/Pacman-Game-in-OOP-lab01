@@ -1,7 +1,7 @@
 #include "../include/Blinky.hpp"
 
 Blinky::Blinky(std::string id): Position(0,0){
-    id = this->id;
+    this->id = id;
 }
 void Blinky::DoBehavior() {
     if (stage == 1) {

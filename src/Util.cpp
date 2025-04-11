@@ -12,7 +12,7 @@ void Draw(Point BlinkyPoint,Point InkyPoint,Point PinkyPoint,Point ClydePoint,Po
             if(InkyPoint.x == i && InkyPoint.y == j){
                 name = "..I..";
             }
-            if(PinkyPoint.x == i && ClydePoint.y == j){
+            if(PinkyPoint.x == i && PinkyPoint.y == j){
                 name = "..P..";
             }
             if(ClydePoint.x == i && ClydePoint.y == j){
@@ -25,4 +25,27 @@ void Draw(Point BlinkyPoint,Point InkyPoint,Point PinkyPoint,Point ClydePoint,Po
             if(j == 15) std::cout<<"|\n";
         }
     }
+}
+
+
+bool IsCollision(Point pacman, Point ghost){
+    return pacman.x == ghost.x && pacman.y == ghost.y;
+}
+
+void PrintGameOverArt() {
+    std::cout << R"(
+
+#############################
+#                           #
+#      ##   ###  #  #       #
+#     #  #  #  # #  #       #
+#     ####  #  # #  #       #
+#     #     #  # #  #       #
+#     #     ###   ##        #
+#                           #
+#      G A M E   O V E R    #
+#                           #
+#############################
+
+)" << std::endl;
 }

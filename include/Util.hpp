@@ -9,4 +9,7 @@
 
 void Draw(Point BlinkyPoint,Point InkyPoint,Point PinkyPoint,Point ClydePoint,Point PacmanPoint);
 
+bool IsCollision(Point pacman, Point ghost);
+
+void PrintGameOverArt();
 #endif
